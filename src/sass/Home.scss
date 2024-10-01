@@ -1,0 +1,56 @@
+// @import "./font.scss";
+
+button:focus {
+  outline: none !important;
+}
+
+.css-l4u8b9-MuiInputBase-root-MuiInput-root:after {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(126, 217, 87, 1) 0%,-
+    rgba(8, 181, 172, 1) 100%
+  );
+}
+
+.css-12rx5qu::after {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(126, 217, 87, 1) 0%,
+    rgba(8, 181, 172, 1) 100%
+  );
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 0.2rem solid !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(126, 217, 87, 1) 0%,
+    rgba(8, 181, 172, 1) 100%
+  );
+}
+
+.css-1rrfrxi::after{
+  border-bottom: 0.2rem solid !important;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    rgba(126, 217, 87, 1) 0%,
+    rgba(8, 181, 172, 1) 100%
+  );
+}
+
+// .input-heading {
+//   font-family: montserrat-italic !important;
+//   font-weight: 200;
+//   font-size: 0.75rem;
+//   // opacity: 0.5;
+// }
