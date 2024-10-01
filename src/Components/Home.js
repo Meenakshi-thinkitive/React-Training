@@ -12,24 +12,36 @@ import Button from "@mui/material/Button";
 import { Link as RouterLink } from 'react-router-dom';
 import Grid from '@mui/material/Grid2';
 import '../sass/Home.scss';
+import { useNavigate } from 'react-router-dom';
+// import { useState } from 'react';
 
 function Home() {
+  const navigate = useNavigate(); 
   const initialValues = {
     email: '',
     password: '',
   };
+  
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('Invalid email format').required('Email is required'),
     password: yup.string().min(6, 'Password must be at least 6 characters').required('Password is required'),
   });
 
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const onSubmit = (values, { setSubmitting, resetForm }) => {
     console.log('Login form values:', values);
+
+
     setTimeout(() => {
       setSubmitting(false);
       resetForm();
+      // setIsLoggedIn(true);
+      navigate('/testtable', { state: { email: values.email } });
+      // navigate('/protected', { state: {logIn} })
     }, 1000);
+
   };
 
   const handleLogin = (event) => {
@@ -43,6 +55,7 @@ function Home() {
     validationSchema,
     onSubmit,
   });
+  
 
   return (
     <Grid sx={{}}>

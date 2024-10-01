@@ -1,13 +1,12 @@
 import React from 'react'
 
-
-function Reset() {
-
+function Parent() {
   return (
     <div>
-      Reset Page
+      
     </div>
   )
 }
 
-export default Reset
+export default Parent
+
